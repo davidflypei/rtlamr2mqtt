@@ -1,9 +1,5 @@
 FROM allangood/rtlamr2mqtt
 
-WORKDIR /go/src/app
-
-FROM python:3.10-slim
-
 COPY ./rtlamr2mqtt.py /usr/bin
 COPY ./requirements.txt /tmp
 COPY ./sdl_ids.txt /var/lib/
