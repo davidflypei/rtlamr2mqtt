@@ -1,14 +1,14 @@
 ---
-name: rtlamr2mqtt
+name: rtlamr2mqtt2
 version: 2.3.3
-slug: rtlamr2mqtt
+slug: rtlamr2mqtt2
 panel_icon: mdi:gauge
 description: RTLAMR to MQTT Bridge
 startup: application
 boot: auto
 map:
   - config:rw
-url: https://github.com/allangood/rtlamr2mqtt
+url: https://github.com/davidflypei/rtlamr2mqtt2
 uart: true
 udev: true
 usb: true
