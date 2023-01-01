@@ -52,11 +52,13 @@ meters:
     protocol: scm+
     name: grid_meter
     unit_of_measurement: kWh
+    format: "#####.##"
     icon: mdi:transmission-tower-export
     device_class: energy
   - id: 1552821709
     protocol: scm+
     name: net_meter
+    format: "#####.##"
     unit_of_measurement: kWh
     icon: mdi:transmission-tower-import
     device_class: energy
