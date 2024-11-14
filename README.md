@@ -185,7 +185,7 @@ meters:
     icon: mdi:gauge
     # A device_class to define what the sensor is measuring for use in the Energy panel
     # Typical values are "gas" or "energy". Default is blank.
-    device_class:
+    device_class: water
     # "total_increasing" for most meters, "total" for meters that might go
     # backwards (net energy meters). Defaults to "total_increasing" if unset.
     state_class:
@@ -205,7 +205,7 @@ If you want to run with docker alone, run this command:
 docker run --name rtlamr2mqtt \
   -v /opt/rtlamr2mqtt/rtlamr2mqtt.yaml:/etc/rtlamr2mqtt.yaml \
   -v /opt/rtlamr2mqtt/data:/var/lib/rtlamr2mqtt \
-  -d /dev/bus/usb:/dev/bus/usb \
+  --device /dev/bus/usb:/dev/bus/usb \
   --restart unless-stopped \
   allangood/rtlamr2mqtt
 ```
